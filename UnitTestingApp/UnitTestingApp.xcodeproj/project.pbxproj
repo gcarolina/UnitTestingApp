@@ -16,6 +16,7 @@
 		F139705229B4C31B00F677DE /* UnitTestingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F139705129B4C31B00F677DE /* UnitTestingAppTests.swift */; };
 		F139705C29B4C31B00F677DE /* UnitTestingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F139705B29B4C31B00F677DE /* UnitTestingAppUITests.swift */; };
 		F139705E29B4C31B00F677DE /* UnitTestingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F139705D29B4C31B00F677DE /* UnitTestingAppUITestsLaunchTests.swift */; };
+		F139706F29B4C38900F677DE /* MathService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F139706E29B4C38900F677DE /* MathService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		F139705729B4C31B00F677DE /* UnitTestingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F139705B29B4C31B00F677DE /* UnitTestingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingAppUITests.swift; sourceTree = "<group>"; };
 		F139705D29B4C31B00F677DE /* UnitTestingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F139706E29B4C38900F677DE /* MathService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,12 +101,11 @@
 		F139703929B4C31700F677DE /* UnitTestingApp */ = {
 			isa = PBXGroup;
 			children = (
-				F139703A29B4C31700F677DE /* AppDelegate.swift */,
-				F139703C29B4C31700F677DE /* SceneDelegate.swift */,
-				F139703E29B4C31700F677DE /* ViewController.swift */,
-				F139704029B4C31700F677DE /* Main.storyboard */,
+				F139706D29B4C35900F677DE /* Services */,
+				F139706C29B4C35100F677DE /* Controllers */,
+				F139706B29B4C34900F677DE /* Views */,
 				F139704329B4C31A00F677DE /* Assets.xcassets */,
-				F139704529B4C31A00F677DE /* LaunchScreen.storyboard */,
+				F139706A29B4C33900F677DE /* Delegates */,
 				F139704829B4C31A00F677DE /* Info.plist */,
 			);
 			path = UnitTestingApp;
@@ -125,6 +126,40 @@
 				F139705D29B4C31B00F677DE /* UnitTestingAppUITestsLaunchTests.swift */,
 			);
 			path = UnitTestingAppUITests;
+			sourceTree = "<group>";
+		};
+		F139706A29B4C33900F677DE /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				F139703A29B4C31700F677DE /* AppDelegate.swift */,
+				F139703C29B4C31700F677DE /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		F139706B29B4C34900F677DE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F139704029B4C31700F677DE /* Main.storyboard */,
+				F139704529B4C31A00F677DE /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F139706C29B4C35100F677DE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F139703E29B4C31700F677DE /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F139706D29B4C35900F677DE /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F139706E29B4C38900F677DE /* MathService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +296,7 @@
 				F139703F29B4C31700F677DE /* ViewController.swift in Sources */,
 				F139703B29B4C31700F677DE /* AppDelegate.swift in Sources */,
 				F139703D29B4C31700F677DE /* SceneDelegate.swift in Sources */,
+				F139706F29B4C38900F677DE /* MathService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
